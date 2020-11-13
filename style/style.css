@@ -8,12 +8,35 @@ body{
     width: 70%;
     height: 20px;
 }
-
+.menu{
+    display: flex;
+}
 .logo{
     width: 120px;
     height: auto;
     padding-left: 10px;
+    padding-right: 23px;
   }
+
+  .topTag{
+    background: #FFFFFF;
+    border-radius: 13px;
+    border-width:20px;
+    display: inline-block;
+    height: 26px;
+    width: auto;
+    line-height: 26px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    border: #C4C4C4;;
+    border-style: solid;
+    border-width: 0.5px;
+    color: #901C1C;
+    font-size: 12px;
+    margin-top: 11px;
+}
 
   h1{
       font-size: 36px;
@@ -116,4 +139,6 @@ p {
     border: #C4C4C4;;
     border-style: solid;
     border-width: 0.5px;
+    color: #901C1C;
+    font-size: 12px;
 }
