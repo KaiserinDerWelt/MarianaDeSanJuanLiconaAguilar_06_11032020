@@ -1,0 +1,24 @@
+body{
+    margin: 40px;
+}
+#navigation{
+  background-color: aqua;
+  float: left;
+  width: 75%;
+}
+
+
+.containerColumns{
+    display: flex;
+    position: relative;
+}
+
+.itemColumn{
+    width: 500px;
+    height: auto;
+}
+
+.tags{
+    display: flex;
+    position: relative;
+}
