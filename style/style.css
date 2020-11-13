@@ -99,4 +99,21 @@ p {
     font-weight: 600px;
     font-size: 12px;
     color: #901C1C;
+    text-align: center;
+    justify-content: center;
+}
+
+.hashTag{
+    background: #FFFFFF;
+    border-radius: 13px;
+    border-width:20px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    border: #C4C4C4;;
+    border-style: solid;
+    border-width: 0.5px;
 }
