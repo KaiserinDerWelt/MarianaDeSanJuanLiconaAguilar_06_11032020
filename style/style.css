@@ -16,7 +16,30 @@ body{
 .itemColumn{
     width: 500px;
     height: auto;
+    background-color: aquamarine;
 }
+
+.card{
+    background-color: red;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.roundPicture{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    display: block;
+    margin: 10px auto;
+
+}
+
+h3 {
+    text-align: center;
+  }
+
+p {
+    text-align: center;
+  }
 
 .tags{
     display: flex;
