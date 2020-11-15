@@ -3,7 +3,7 @@ body{
     margin-top: 30px;
     font-family: 'DM Sans', sans-serif;
 }
-#navigation{
+.navigation{
     float: left;
     width: 70%;
     height: 20px;
@@ -148,4 +148,54 @@ p {
     border-width: 0.5px;
     color: #901C1C;
     font-size: 12px;
+}
+
+/*Profile Page Styles*/
+
+.navigationProfile{
+    width: 70%;
+    height: 20px;
+    margin-bottom: 50px;
+}
+/*Filters section*/
+.containerColumnsFilter{
+    display: flex;
+}
+
+.itemColumnFilter{
+    width: 500px;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.cardPicture{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Pictures Section*/
+
+.containerColumnsPicture{
+    display: flex;
+}
+
+.itemColumnPicture{
+    width: 500px;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.cardDisplay{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
