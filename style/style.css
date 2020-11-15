@@ -38,7 +38,12 @@ body{
     margin-top: 11px;
 }
 
-
+.btn:focus{
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  
+  }
 
   h1{
       font-size: 36px;
