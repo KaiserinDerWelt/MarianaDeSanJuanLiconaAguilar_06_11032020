@@ -12,65 +12,73 @@
 <body>
   <nav class="navigationProfile">
    <img class="logo" src="img/logo.png" alt="logo-eye-fish-agency">
-  </nav>
+  </nav><!--Intro Section-->
   <div class="containerFiltersandProfile">
     <div class="containerColumnsFilter">
       <div class="itemColumnFilter">
         <div class="cardPicture">
+          <p class="monoId">Maria Lee</p>
+          <p class="monoLocation">London,UK</p>
+          <p class="monoDescription">Be free</p>
+          <div class="monotags">
+            <p class="hashTagPro">#tagOne</p>
+            <p class="hashTagPro">#tagTwo</p>
+            <p class="hashTagPro">#tagThree</p>
+            <p class="hashTagPro">#tagFour</p>
+          </div>
         </div>
        </div>
        <div class="itemColumnFilter">
         <div class="cardPicture">
+          <button class="btn contactButton"  type="button">Contact Me</button>
         </div>
        </div>
        <div class="itemColumnFilter">
-        <div class="cardPicture">
+        <div class="cardPictureProfile">
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt="mimi-keel-photography"  class="roundPictureIndividual" ></a>
         </div>
        </div>
     </div>
   </div>
-  <div class="containerFreelancers">
+  <div class="filterContainer">
+    <div class="filterBox">
+      <p class="orderBy">Order by</p>
+      <div class="custom-select">
+        <select>
+          <option value="0">Popularity</option>
+          <option value="1">Date</option>
+          <option value="2">Title</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="containerPortfolio">
     <!--First row of items-->
     <div class="containerColumnsPicture">
       <div class="itemColumnPicture">
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MimiKeel.jpg" alt="mimi-keel-photography"  class="roundPicture"></a>
-          <h3>Name</h3>
-          <p class="location">Paris</p>
-          <p class="description">More text</p>
-          <p class="rate">200</p>
-        <div class="tags">
-        <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p>
+        <div class="cardDisplay"> <!--*onclick="openModal();currentSlide(1)"-->
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+        <div class="carrouselDescription">
+          <div class="colName">I</div>
+          <div class="colPrice">3</div>
       </div>
         </div>
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt="ellie-rose-photography"  class="roundPicture"></a>
-        <h3>Name</h3>
-        <p class="location">a</p>
-        <p class="description">b</p>
-        <p class="rate">c</p>
-      <div class="tags">
-        <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p>
+          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
     </div>
         </div>
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt="tracy-galindo-photography"  class="roundPicture"></a>
-        <h3>Name</h3>
-        <p class="location">a</p>
-        <p class="description">b</p>
-        <p class="rate">c</p>
-      <div class="tags">
-        <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p>
+          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
     </div>
         </div>
        </div>
@@ -78,43 +86,77 @@
     <!--Second row of items-->
     <div class="containerColumns">
       <div class="itemColumnPicture">
-        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="nabel-bradford-photography" class="roundPicture"></a>
-          <h3>Name</h3>
-          <p class="location">a</p>
-          <p class="description">b</p>
-          <p class="rate">c</p>
-        <div class="tags">
-          <p class="hashTag">#tagOne</p>
-          <p class="hashTag">#tagTwo</p>
-          <p class="hashTag">#tagThree</p></div></div>
+        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+        <div class="carrouselDescription">
+          <div class="colName">I</div>
+          <div class="colPrice">3</div>
+          </div>
+        </div>
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt="Rhode-Dubois-photography"  class="roundPicture"></a>
-        <h3>Name</h3>
-        <p class="location">a</p>
-        <p class="description">b</p>
-        <p class="rate">c</p>
-      <div class="tags">
-        <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p></div>
+          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
+        </div>
         </div>
        </div>
-       <div class="itemColumn">
+       <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt="Marcel-Nikolic-photography"  class="roundPicture"></a>
-        <h3>Name</h3>
-        <p class="location">a</p>
-        <p class="description">b</p>
-        <p class="rate">c</p>
-      <div class="tags">
-        <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p></div>
+          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+        <div class="colPrice">3</div>
+      </div>
         </div>
        </div>
     </div>
   </div>
+  <!--Modal-->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div><!--Add Slide Pictures-->
+        <img src="img/ID/MarcelNikolic.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/filterDropdown.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>
