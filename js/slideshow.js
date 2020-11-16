@@ -1,10 +1,10 @@
-// Open the Modal
-function openModal() {
+// Open my Modal
+function openModalBox() {
     document.getElementById("myModal").style.display = "block";
   }
   
-  // Close the Modal
-  function closeModal() {
+  // Close my Modal
+  function closeModalBox() {
     document.getElementById("myModal").style.display = "none";
   }
   
@@ -14,11 +14,6 @@ function openModal() {
   // Next/previous controls
   function plusSlides(n) {
     showSlides(slideIndex += n);
-  }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
   }
   
   function showSlides(n) {

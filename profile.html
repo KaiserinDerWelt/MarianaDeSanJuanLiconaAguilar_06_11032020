@@ -56,8 +56,8 @@
     <!--First row of items-->
     <div class="containerColumnsPicture">
       <div class="itemColumnPicture">
-        <div class="cardDisplay"> <!--*onclick="openModal();currentSlide(1)"-->
-          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+        <div class="cardDisplay"> <!--*onclick="openModalBox();currentSlide(1)"-->
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
         <div class="carrouselDescription">
           <div class="colName">I</div>
           <div class="colPrice">3</div>
@@ -66,7 +66,7 @@
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
       <div class="carrouselDescription">
         <div class="colName">I</div>
           <div class="colPrice">3</div>
@@ -75,7 +75,7 @@
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
       <div class="carrouselDescription">
         <div class="colName">I</div>
           <div class="colPrice">3</div>
@@ -86,7 +86,7 @@
     <!--Second row of items-->
     <div class="containerColumns">
       <div class="itemColumnPicture">
-        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
         <div class="carrouselDescription">
           <div class="colName">I</div>
           <div class="colPrice">3</div>
@@ -95,7 +95,7 @@
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
       <div class="carrouselDescription">
         <div class="colName">I</div>
           <div class="colPrice">3</div>
@@ -104,7 +104,7 @@
        </div>
        <div class="itemColumnPicture">
         <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="openModal();currentSlide(1)"></a>
+          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="openModalBox();currentSlide(1)"></a>
       <div class="carrouselDescription">
         <div class="colName">I</div>
         <div class="colPrice">3</div>
@@ -115,48 +115,48 @@
   </div>
   <!--Modal-->
   <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <span class="close cursor" onclick="closeModalBox()">&times;</span>
     <div class="modal-content">
   
       <div class="mySlides">
         <div class="numbertext">1 / 4</div>
-        <img src="" style="width:100%">
+        <img src=""  class="imgShow" style="width:100%">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">2 / 4</div>
-        <img src="" style="width:100%">
+        <img src=""  class="imgShow" style="width:100%">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">3 / 4</div><!--Add Slide Pictures-->
-        <img src="img/ID/MarcelNikolic.jpg" style="width:100%">
+        <img src="img/ID/MarcelNikolic.jpg"  class="imgShow">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">4 / 4</div>
-        <img src="" style="width:100%">
+        <img src=""  class="imgShow">
       </div>
       <div class="mySlides">
         <div class="numbertext">4 / 5</div>
-        <img src="" style="width:100%">
+        <img src=""  class="imgShow">
       </div>
       <div class="mySlides">
         <div class="numbertext">4 / 6</div>
-        <img src="" style="width:100%">
+        <img src=""  class="imgShow"class="imgShow">
       </div>
   
-      <!-- Next/previous controls -->
+      <!-- Controls before and after -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
   
-      <!-- Caption text -->
+      <!-- Caption text pulld from alt-->
       <div class="caption-container">
         <p id="caption"></p>
       </div>
     </div>
   </div>
   <script src="js/filterDropdown.js"></script>
-  <script src="js/lightbox.js"></script>
+  <script src="js/slideshow.js"></script>
 </body>
 </html>
