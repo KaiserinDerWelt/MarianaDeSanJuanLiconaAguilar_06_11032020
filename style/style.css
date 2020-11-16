@@ -38,6 +38,12 @@ body{
     margin-top: 11px;
 }
 
+.topTag:hover{
+    background-color: #901C1C;
+    color:#FFFFFF;
+
+}
+
 .btn:focus{
     border-color: inherit;
     -webkit-box-shadow: none;
@@ -148,6 +154,12 @@ p {
     border-width: 0.5px;
     color: #901C1C;
     font-size: 12px;
+}
+
+.hashTag:hover{
+    background-color: #901C1C;
+    color: #FFFFFF;
+
 }
 
 /*Profile Page Styles*/
@@ -266,6 +278,11 @@ p {
     font-size: 12px;
 }
 
+.hashTagPro:hover{
+    background-color: #901C1C;
+    color: #FFFFFF;
+}
+
 .contactButton{
   background-color: #901C1C; 
   border-color: #901C1C; 
@@ -278,6 +295,13 @@ p {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.contactButton:hover{
+    background-color: #D3573C;
+    color: #000000;
+    border-color: #D3573C;
+    border-style: solid;
 }
 
 .roundPictureIndividual{
