@@ -375,6 +375,7 @@ p {
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
     user-select: none;
+    background-color: #901C1C;
   }
   
   /*style items (options):*/

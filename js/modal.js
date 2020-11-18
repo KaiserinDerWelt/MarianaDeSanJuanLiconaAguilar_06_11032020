@@ -1,6 +1,6 @@
 // DOM Elements
 const modalbg = document.querySelector(".bground");
-const modalBtn = document.querySelectorAll(".modal-btn");
+const modalBtn = document.querySelectorAll(".contactButton");
 const formData = document.querySelectorAll(".formData");
 
 
