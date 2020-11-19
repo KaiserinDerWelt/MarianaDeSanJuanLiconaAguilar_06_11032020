@@ -134,10 +134,12 @@ main {
 
 label {
   font-family: var(--font-default);
-  font-size: 17px;
-  font-weight: normal;
+  font-size: 36px;
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 11px;
+  color: #312E2E;
+  margin-bottom: 3px;
 }
 
 .headerModal{
@@ -146,7 +148,7 @@ label {
   font-weight: 400;
   font-style: normal;
   text-align: left !important;
-  margin-top:5px;
+  margin-top:-20px;
   margin-bottom: 5px;
 }
 input {
@@ -205,6 +207,20 @@ input[data-error]::after {
   cursor: pointer;
   transform: scale(0.7);
 }
+
+.closePicture {
+  position: absolute;
+  right: 15px;
+  top: -15px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(0.7);
+  color: #901C1C;
+  font-size: 82px;
+}
+
 .close:before,
 .close:after {
   position: absolute;
@@ -222,7 +238,7 @@ input[data-error]::after {
 }
 .btn-submit{
   background: #901C1C;
-  display: block;
+  /*display: block; Enable for mobile view*/
   margin: 0 auto;
   border-radius: 7px;
   font-size: 1rem;
@@ -231,6 +247,7 @@ input[data-error]::after {
   cursor: pointer;
   border: 0;
 }
+
 .btn-submit-success {
   background: #fe142f;
   display: block;
