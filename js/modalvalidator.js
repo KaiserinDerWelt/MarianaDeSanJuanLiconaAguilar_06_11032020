@@ -73,14 +73,14 @@ function validate() {
         }
     }
 
-    //Add text field validator
+    /*Add text field validator
     if (textfield == "") {
         document.getElementById('textSquare').style.borderColor = "red";
         printError("textError", "Please write a message.");
     }  else {
             printError("textError", "");
             textError = false;
-        }
+        }*/
 
     //Do not send the form if there are errors
     if (firstError || lastError || mailError || textError) {
