@@ -17,20 +17,11 @@ function validate() {
     var firstname = document.reserve.first.value;
     var lastname = document.reserve.last.value;
     var email = document.reserve.email.value;
-    var bday = document.reserve.birthdate.value;
-    var quantity = document.reserve.quantity.value;
-    var location = document.reserve.location.value;
-    var accept = [];
-    var checkboxes = document.getElementsByName("accept[]");
-    for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            accept.push(checkboxes[i].value);
-        }
-    }
+    var textfield = document.reserve.textSquare.value;
 
-    var firstError = lastError = mailError = bdayError = quantityError = locationError = hoErr = true;
+    var firstError = lastError = mailError = textError = true;
 
-    // Validating firstname
+    // Validating Name
     if (firstname == "") {
         document.getElementById('first').style.borderColor = "red";
         printError("firstError", "Please enter your name.");
@@ -48,7 +39,7 @@ function validate() {
         }
     }
 
-    // Validating secondname
+    // Validating Lastname
     if (lastname == "") {
         document.getElementById('last').style.borderColor = "red";
         printError("lastError", "Please enter your last name.");
@@ -83,14 +74,16 @@ function validate() {
     }
 
     //Add text field validator
+    if (textfield == "") {
+        document.getElementById('textSquare').style.borderColor = "red";
+        printError("textError", "Please write a message.");
+    }  else {
+            printError("textError", "");
+            textError = false;
+        }
 
     //Do not send the form if there are errors
-    if (firstError || lastError || mailError || bdayError || quantityError || locationError || hoErr) {
+    if (firstError || lastError || mailError || textError) {
         return false;
-    }
-     else {
-         //myFunction
-         showSuccess("Successy");
-         return false;
     }
 };
