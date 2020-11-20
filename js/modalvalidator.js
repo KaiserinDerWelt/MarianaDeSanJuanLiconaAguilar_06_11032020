@@ -56,7 +56,22 @@ function validate() {
             lastError = false;
         }
     }
-
+        // Validating email 
+    if (email == "") {
+        document.getElementById('email').style.borderColor = "red";
+        printError("mailError", "Please enter your email address.");
+    } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if (regex.test(email) === false) {
+            document.getElementById('email').style.borderColor = "red";
+            printError("mailError", "Please enter a valid email address.");
+        } else {
+            printError("mailError", "");
+            mailError = false;
+        }
+    }
+    
     // Validating text area
 
     if (message == "") {
