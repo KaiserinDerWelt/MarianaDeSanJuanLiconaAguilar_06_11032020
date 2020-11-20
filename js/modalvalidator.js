@@ -17,9 +17,8 @@ function validate() {
     var firstname = document.reserve.first.value;
     var lastname = document.reserve.last.value;
     var email = document.reserve.email.value;
-    var textfield = document.reserve.textSquare.value;
 
-    var firstError = lastError = mailError = textError = true;
+    var firstError = lastError = mailError = true;
 
     // Validating Name
     if (firstname == "") {
@@ -72,18 +71,9 @@ function validate() {
             mailError = false;
         }
     }
-
-    /*Add text field validator
-    if (textfield == "") {
-        document.getElementById('textSquare').style.borderColor = "red";
-        printError("textError", "Please write a message.");
-    }  else {
-            printError("textError", "");
-            textError = false;
-        }*/
-
+  
     //Do not send the form if there are errors
     if (firstError || lastError || mailError || textError) {
         return false;
-    }
+    } 
 };
