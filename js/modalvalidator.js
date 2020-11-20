@@ -17,8 +17,9 @@ function validate() {
     var firstname = document.reserve.first.value;
     var lastname = document.reserve.last.value;
     var email = document.reserve.email.value;
+    var message =document.reserve.myText.value;
 
-    var firstError = lastError = mailError = true;
+    var firstError = lastError = mailError = messageError = true;
 
     // Validating Name
     if (firstname == "") {
@@ -56,24 +57,19 @@ function validate() {
         }
     }
 
-    // Validating email 
-    if (email == "") {
-        document.getElementById('email').style.borderColor = "red";
-        printError("mailError", "Please enter your email address.");
+    // Validating text area
+
+    if (message == "") {
+        document.getElementById('myText').style.borderColor = "red";
+        printError("messageError", "Please enter a message.");
     } else {
-        // Regular expression for basic email validation
-        var regex = /^\S+@\S+\.\S+$/;
-        if (regex.test(email) === false) {
-            document.getElementById('email').style.borderColor = "red";
-            printError("mailError", "Please enter a valid email address.");
-        } else {
-            printError("mailError", "");
-            mailError = false;
+            printError("messageError", "");
+            messageError = false;
         }
-    }
+
   
     //Do not send the form if there are errors
-    if (firstError || lastError || mailError || textError) {
+    if (firstError || lastError || mailError || messageError) {
         return false;
-    } 
+    }  
 };
