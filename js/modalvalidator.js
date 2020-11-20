@@ -87,4 +87,9 @@ function validate() {
     if (firstError || lastError || mailError || messageError) {
         return false;
     }  
+    else{
+        console.log("Hello thanks for your submission!!");
+        console.log("Hello thanks for your submission!!");
+        console.log("Hello thanks for your submission!!");
+    }
 };
