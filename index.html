@@ -12,16 +12,16 @@
 <body>
   <nav class="navigation">
     <div class="menu">
-      <img class="logo" src="img/logo.png" alt="logo-eye-fish-agency">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="logo-eye-fish-agency"></a>
       <div id="btnContainer">
-        <button class="btn topTag" onclick="filter('Portrait')">#Portrait</button>
-        <button class="btn topTag" onclick="filter('Art')">#Art</button>
-        <button class="btn topTag" onclick="filter('Fashion')">#Fashion</button>
-        <button class="btn topTag" onclick="filter('Architecture')">#Architecture</button>
-        <button class="btn topTag" onclick="filter('Travel')">#Travel</button>
-        <button class="btn topTag" onclick="filter('Sport')">#Sport</button>
-        <button class="btn topTag" onclick="filter('Animals')">#Animals</button>
-        <button class="btn topTag" onclick="filter('Events')">#Events</button>
+        <button class="btn topTag" onclick="filter('portraits')">#Portrait</button>
+        <button class="btn topTag" onclick="filter('art')">#Art</button>
+        <button class="btn topTag" onclick="filter('fashion')">#Fashion</button>
+        <button class="btn topTag" onclick="filter('architecture')">#Architecture</button>
+        <button class="btn topTag" onclick="filter('travel')">#Travel</button>
+        <button class="btn topTag" onclick="filter('sports')">#Sport</button>
+        <button class="btn topTag" onclick="filter('animals')">#Animals</button>
+        <button class="btn topTag" onclick="filter('events')">#Events</button>
       </div>
   </nav>
     </div>
@@ -39,13 +39,13 @@
           <p class="rate">200</p>
         <div class="tags">
         <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p>
+        <p class="hashTag">portrait</p>
+        <p class="hashTag">#fashion</p>
       </div>
         </div>
        </div>
        <div class="itemColumn">
-        <div class="card sports architecture">
+        <div class="card  sports architecture">
           <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt="ellie-rose-photography"  class="roundPicture"></a>
         <h3>Name</h3>
         <p class="location">a</p>
@@ -54,7 +54,7 @@
       <div class="tags">
         <p class="hashTag">#tagOne</p>
         <p class="hashTag">#tagTwo</p>
-        <p class="hashTag">#tagThree</p>
+        <p class="hashTag">sports</p>
     </div>
         </div>
        </div>
@@ -76,7 +76,7 @@
     <!--Second row of items-->
     <div class="containerColumns">
       <div class="itemColumn">
-        <div class="card travel portrait"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="nabel-bradford-photography" class="roundPicture"></a>
+        <div class="card travel portraits"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="nabel-bradford-photography" class="roundPicture"></a>
           <h3>Name</h3>
           <p class="location">a</p>
           <p class="description">b</p>
@@ -87,7 +87,7 @@
           <p class="hashTag">#tagThree</p></div></div>
        </div>
        <div class="itemColumn">
-        <div class="card sport fashion events animals">
+        <div class="card sports fashion events animals">
           <a href="#"><img src="img/ID/RhodeDubois.jpg" alt="Rhode-Dubois-photography"  class="roundPicture"></a>
         <h3>Name</h3>
         <p class="location">a</p>
@@ -95,7 +95,7 @@
         <p class="rate">c</p>
       <div class="tags">
         <p class="hashTag">#tagOne</p>
-        <p class="hashTag">#tagTwo</p>
+        <p class="hashTag">fashion</p>
         <p class="hashTag">#tagThree</p></div>
         </div>
        </div>
@@ -115,29 +115,6 @@
     </div>
   </div>
   <script src="js/jsonApi.js"></script>
-  <script>
-  function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-  </script>
+  <script src="js/buttonfilter.js"></script>
 </body>
 </html>

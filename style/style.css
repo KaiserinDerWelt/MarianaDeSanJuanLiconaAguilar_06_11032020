@@ -115,6 +115,11 @@ body{
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: none;
+}
+
+.show {
+  display: block;
 }
 .roundPicture{
     width: 150px;
@@ -259,6 +264,10 @@ p {
 }
 .monotags{
     margin-left: 22px;
+}
+
+.containerFreelancers{
+  background-color: pink;
 }
 .hashTagPro{
     background: #FFFFFF;
