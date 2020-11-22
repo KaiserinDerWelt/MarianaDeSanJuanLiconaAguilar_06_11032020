@@ -78,4 +78,7 @@
       city[i].innerHTML = v.city;
       description[i].innerHTML = v.tagline;
       rate[i].innerHTML = "$" + v.price + "/day";
-  });
+  }
+  );
+
+  
