@@ -14,13 +14,14 @@ for (i = 0; i < l; i++) {
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
+    /*Creates option item*/
+
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,
         and the selected item:*/
+        /*BUG IS SOMEWHERE HERE*/
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -36,7 +37,7 @@ for (i = 0; i < l; i++) {
             }
             this.setAttribute("class", "same-as-selected");
             break;
-          }
+          } 
         }
         h.click();
     });
@@ -53,8 +54,6 @@ for (i = 0; i < l; i++) {
     });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -73,8 +72,7 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
+/*Close the box on click*/
 document.addEventListener("click", closeAllSelect);
 
 
