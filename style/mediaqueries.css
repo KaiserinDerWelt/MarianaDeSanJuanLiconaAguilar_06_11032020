@@ -4,8 +4,26 @@
 
   @media (min-width:768px)  { 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
- }
+  
+}
 
 
 @media (max-width: 480px){
+
+   html,body{
+      overflow: auto;
+      max-height: fit-content;
+   }
+
+   .containerColumns{
+      display: flex;
+      flex-direction: column;
+   }
+
+
+   .containerColumnsPicture {
+      display: flex;
+      flex-direction: column;
+   } 
+
 }
