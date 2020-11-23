@@ -8,12 +8,12 @@
 
 
 @media (max-width: 480px){
-  /* *{
+  *{
       outline: 2px solid red;
-     }*/
+     }
 
    html,body{
-      overflow: auto;
+      /*overflow: auto;*/
       max-height: fit-content;
    }
 
@@ -151,17 +151,23 @@
          margin-top: 7px !important;
          margin-bottom: 7px !important;
        }
-         .monotags{
-            display: flex;
-            margin-top: 50px;
-            margin-left: -154px;
-            flex-wrap: wrap;
-            justify-content: center;
-         }
    .containerColumnsPicture{
       display: flex;
       flex-direction: column;
+      background-color: lightcoral;
     }
+
+    .cardDisplay{
+       background-color: lightgreen;
+    }
+
+    .squarePicture {
+      width: 252px;
+      height: 400px;
+      display: block;
+      margin: 0px auto;
+      object-fit: cover;
+  }
 
     .BackButton{
       width:300px;
