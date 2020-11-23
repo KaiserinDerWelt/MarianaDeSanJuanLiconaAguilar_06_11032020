@@ -15,6 +15,23 @@
       max-height: fit-content;
    }
 
+   .navigation {
+      float: left;
+      width: 40%;
+      height: 20px;
+  }
+
+   .menu {
+      display: flex;
+      position: absolute;
+  }
+
+   .logo {
+      width: 100px;
+      height: auto;
+      padding-left: 10px;
+   }
+
    .hashTag{
       background: #FFFFFF;
       border-radius: 13px;
@@ -50,6 +67,27 @@
       font-size: 12px;
       margin-top: 11px;
     }
+
+    h1{
+      font-size: 16px;
+      font-weight: 400;
+      color: #901C1C;
+      font-style: normal;
+      display: flex;
+      justify-content: flex-end;
+  }
+   #btnContainer{
+    display: flex;
+    margin-top: 50px;
+    margin-left: -154px;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+  .containerFreelancers{
+   margin-top: 100px;
+   background-color: #FFFFFF;
+   }
 
    .containerColumns{
       display: flex;
