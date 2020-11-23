@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fish Eye</title>
+  <meta name="description" content="">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/modal.css">
+<link rel="stylesheet" href="style/mediaqueries.css">
+
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navigationProfile">
+   <img class="logo" src="img/logo.png" alt="logo-eye-fish-agency">
+  </nav><!--Intro Section-->
+  <div class="containerFiltersandProfile">
+    <div class="containerColumnsFilter">
+      <div class="itemColumnFilter">
+        <div class="cardPicture">
+          <p class="monoId">Maria Lee</p>
+          <p class="monoLocation">London,UK</p>
+          <p class="monoDescription">Be free</p>
+          <div class="monotags">
+            <p class="hashTagPro">#tagOne</p>
+            <p class="hashTagPro">#tagTwo</p>
+            <p class="hashTagPro">#tagThree</p>
+            <p class="hashTagPro">#tagFour</p>
+          </div>
+        </div>
+       </div>
+       <div class="itemColumnFilter">
+        <div class="cardPicture">
+          <button class="btn contactButton"  type="button" onclick="launchModal()">Contact Me</button>
+        </div>
+       </div>
+       <div class="itemColumnFilter">
+        <div class="cardPictureProfile">
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt="mimi-keel-photography"  class="roundPictureIndividual" ></a>
+        </div>
+       </div>
+    </div>
+  </div>
+  <div class="filterContainer">
+    <div class="filterBox">
+      <p class="orderBy">Order by</p>
+      <div class="custom-select">
+        <select>
+          <option value="0">Popularity</option>
+          <option value="0">Popularity</option>
+          <option value="1">Date</option>
+          <option value="2">Title</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="containerPortfolio">
+    <!--First row of items-->
+    <div class="containerColumnsPicture">
+      <div class="itemColumnPicture">
+        <div class="cardDisplay"> <!--*onclick="openModalBox();currentSlide(1)"-->
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="currentSlide(1)"></a>
+        <div class="carrouselDescription">
+          <div class="colName">I</div>
+          <div class="colPrice">3</div>
+      </div>
+        </div>
+       </div>
+       <div class="itemColumnPicture">
+        <div class="cardDisplay">
+          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="currentSlide(2)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
+    </div>
+        </div>
+       </div>
+       <div class="itemColumnPicture">
+        <div class="cardDisplay">
+          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="currentSlide(3)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
+    </div>
+        </div>
+       </div>
+    </div>
+    <!--Second row of items-->
+    <div class="containerColumnsPicture">
+      <div class="itemColumnPicture">
+        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="currentSlide(4)"></a>
+        <div class="carrouselDescription">
+          <div class="colName">I</div>
+          <div class="colPrice">3</div>
+          </div>
+        </div>
+       </div>
+       <div class="itemColumnPicture">
+        <div class="cardDisplay">
+          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="currentSlide(5)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+          <div class="colPrice">3</div>
+        </div>
+        </div>
+       </div>
+       <div class="itemColumnPicture">
+        <div class="cardDisplay">
+          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="currentSlide(6)"></a>
+      <div class="carrouselDescription">
+        <div class="colName">I</div>
+        <div class="colPrice">3</div>
+      </div>
+        </div>
+       </div>
+    </div>
+    <div class="BackButton">
+      <div class="containerFloat">
+        <div class="columnNumer">I</div>
+        <div class="columnRate">3</div>
+      </div>
+    </div>
+  </div>
+  <!--Modal pic-->
+  <div id="myModal" class="modalDisplay">
+    <span class="closePicture" onclick="closeModalBox()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <img src="img/ID/MimiKeel.jpg"  class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="img/ID/EllieRoseWilkens.jpg"  class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="img/ID/TracyGalindo.jpg"  class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="img/ID/NabeelBrandford.jpg"  class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="img/ID/RhodeDubois.jpg"  class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="img/ID/MarcelNikolic.jpg"  class="imgShow"class="imgShow">
+        <div class="caption-container">
+          <p class="caption">Pug Gordo</p>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <!--<div class="caption-container">
+    <p class="caption">Pug Gordo</p>
+  </div>-->
+  <!--Form Added Here-->
+  <div class="bground">
+    <div class="content">
+      <span class="close" onclick="closeModal()"></span>
+      <div class="modal-body">
+        <form name="reserve" action="profile.html" method="get" onsubmit="return validate();">
+          <p class="headerModal">Contact  me</p>
+          <p class="headerModal">Mimi Kell</p>
+          <div
+            class="formData">
+            <label for="first">First Name</label><br>
+            <input class="text-control" type="text" id="first" name="first"/><br>
+            <div class="error" id="firstError"></div>
+          </div>
+          <div class="formData"> 
+            <label for="last">Last Name</label><br>
+            <input class="text-control" type="text" id="last" name="last"/><br>
+            <div class="error" id="lastError"></div>
+          </div>
+          <div class="formData">
+            <label for="email">Email</label><br>
+            <input class="text-control" type="text" id="email" name="email"/><br>
+            <div class="error" id="mailError"></div>
+          </div>
+          <label>Your message </label><br>
+          <textarea  class="textarea" name="message" rows="6" cols="18" id="myText"></textarea><br>
+            <div class="error" id="messageError"></div>
+            <br>
+            <br>
+          <input class="btn-submit" type="submit" class="button" value="Send"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/filterDropdown.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/modalvalidator.js"></script>
+</body>
+</html>
