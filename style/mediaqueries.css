@@ -107,8 +107,18 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
-      display: none;
+      right: 29%;
+      bottom: 0;
+      position: fixed;
+      z-index: 1;
       }
+
+      .contactButton:hover{
+         background-color: #D3573C;
+         color: #000000;
+         border-color: #D3573C;
+         border-style: solid;
+       }
 
       .roundPictureIndividual {
          width: 99px;
@@ -161,6 +171,17 @@
        background-color: lightgreen;
     }
 
+    .cardPictureProfile{
+      width: 100px;
+      background-color: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .squarePicture {
       width: 252px;
       height: 400px;
@@ -184,4 +205,6 @@
       margin-right: 45px;
       display: none;
       }
+
+      
 }

@@ -409,6 +409,12 @@ cursor: pointer;
 
 }
 
+.numbertext{
+  color: #901C1C;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .colName{
 width: 60%;
 background-color: aqua;
