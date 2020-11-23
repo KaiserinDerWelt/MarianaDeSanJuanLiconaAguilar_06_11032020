@@ -8,9 +8,9 @@
 
 
 @media (max-width: 480px){
-  *{
+ /* *{
       outline: 2px solid red;
-     }
+     }*/
 
    html,body{
       /*overflow: auto;*/
@@ -110,7 +110,6 @@
       right: 29%;
       bottom: 0;
       position: fixed;
-      z-index: 1;
       }
 
       .contactButton:hover{
@@ -205,6 +204,25 @@
       margin-right: 45px;
       display: none;
       }
+
+      .imgShow {
+         width: 270px;
+         height: 450px;
+         display: block;
+         margin: 10px auto;
+         object-fit: cover;
+         padding-right: 1px;
+     }
+
+     .headerModal {
+      font-size: 50px;
+      color: #000000;
+      font-weight: 400;
+      font-style: normal;
+      text-align: left !important;
+      margin-top: -20px;
+      margin-bottom: 5px;
+  }
 
       
 }
