@@ -8,9 +8,13 @@ function openModalBox() {
     document.getElementById("myModal").style.display = "none";
   }
   
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
+  var slideIndex;
+  function currentSlide(n) {
+    openModalBox()
+    slideIndex = n;
+    showSlides(n)
+  }
+
   // Next/previous controls
   function plusSlides(n) {
     showSlides(slideIndex += n);

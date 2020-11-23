@@ -18,6 +18,9 @@ for (i = 0; i < l; i++) {
 
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
+    if (j === 1) {
+      c.classList.add('same-as-selected')
+    }
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,
         and the selected item:*/
