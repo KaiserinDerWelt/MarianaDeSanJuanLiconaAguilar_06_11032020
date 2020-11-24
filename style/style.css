@@ -416,14 +416,19 @@ cursor: pointer;
 }
 
 .colName{
-width: 60%;
+width: 50%;
 background-color: aqua;
 }
 
 .colPrice{
- width: 40%;
+ width: 25%;
  background-color: pink;
 }
+
+.colLike{
+  width: 25%;
+  background-color: purple;
+ }
 
 .squarePicture{
   width: 342px;

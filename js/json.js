@@ -66,7 +66,7 @@
       "portrait": "MarcelNikolic.jpg"
     }
   ]};
-  //Javascript
+  //Javascript  to populate html with JSON
   var h3 = document.getElementsByTagName('h3');
   var city = document.getElementsByClassName('location');
   var description = document.getElementsByClassName('description');
