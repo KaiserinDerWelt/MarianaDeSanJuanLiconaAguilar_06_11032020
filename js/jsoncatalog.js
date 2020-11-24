@@ -597,7 +597,30 @@ var json = {"media": [
 ]};
 
 //Javascript  to populate html with JSON
- var name = document.getElementsByClassName("monoId");
- var location = document.getElementsByClassName("monoLocation");
- var description = document.getElementsByClassName("monoDescription");
- 
+
+
+ var json = {"photographers": [
+    {
+      "name": "Mimi Keel",
+      "id": 243,
+      "alt" : "UK Photographer For Events",
+      "city": "London",
+      "country": "UK",
+      "tags": ["portrait", "events", "travel", "animals"],
+      "tagline": "Finding beauty in everyday things",
+      "price": 400,
+      "portrait": "MimiKeel.jpg"
+    }
+  ]};
+  //Javascript  to populate html with JSON
+  var h3 = document.getElementsByClassName('monoId');
+  var city = document.getElementsByClassName('monoLocation');
+  var description = document.getElementsByClassName('monoDescription');
+  //Declare tags here
+  var photographers = json.photographers;
+  for(var i = 0; i < photographers.length; i++) {    
+    h3[i].innerHTML = photographers[i].name;
+    city[i].innerHTML = photographers[i].city;  
+    description[i].innerHTML = photographers[i].tagline;
+     
+  }  
