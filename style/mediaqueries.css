@@ -78,6 +78,13 @@
       display: flex;
       justify-content: flex-end;
   }
+
+  .cardPicture {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
    #btnContainer{
     display: flex;
     margin-top: 50px;
@@ -110,6 +117,7 @@
       right: 29%;
       bottom: 0;
       position: fixed;
+      z-index: 1;
       }
 
       .contactButton:hover{
@@ -127,6 +135,30 @@
          margin-right: 25px;
          object-fit: cover;
      }
+
+     .hashTagPro{
+      background: #FFFFFF;
+      border-radius: 13px;
+      border-width:20px;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 5px 0 5px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      border: #C4C4C4;;
+      border-style: solid;
+      border-width: 0.5px;
+      color: #901C1C;
+      font-size: 11px;
+    }
+
+     .monotags{
+      margin-left: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+    }
 
       .monoId{
          font-size: 18px;
@@ -160,6 +192,14 @@
          margin-top: 7px !important;
          margin-bottom: 7px !important;
        }
+
+       .filterBox {
+         display: flex;
+         position: relative;
+         align-items: center;
+         margin-top: 40px;
+     }
+
    .containerColumnsPicture{
       display: flex;
       flex-direction: column;
