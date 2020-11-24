@@ -77,6 +77,3 @@ function closeAllSelect(elmnt) {
 }
 /*Close the box on click*/
 document.addEventListener("click", closeAllSelect);
-
-
-//

@@ -1,10 +1,4 @@
-  var div = document.getElementsByClassName("card")[0],
-      h3 = div.getElementsByTagName('h3'),
-      city = div.getElementsByClassName('location'),
-      description = div.getElementsByClassName('description'),
-      rate = div.getElementsByClassName('rate'),
-      data = {
-         "photographers": [
+     var json = {"photographers": [
     {
       "name": "Mimi Keel",
       "id": 243,
@@ -71,14 +65,21 @@
       "price": 300,
       "portrait": "MarcelNikolic.jpg"
     }
-  ]
-    };
-    data.photographers.forEach(function(v, i) {
-      h3[i].innerHTML = v.name;
-      city[i].innerHTML = v.city;
-      description[i].innerHTML = v.tagline;
-      rate[i].innerHTML = "$" + v.price + "/day";
-  }
-  );
+  ]};
+  //Javascript
+  var h3 = document.getElementsByTagName('h3');
+  var city = document.getElementsByClassName('location');
+  var description = document.getElementsByClassName('description');
+  var rate = document.getElementsByClassName('rate');
+  var photographers = json.photographers;
+  for(var i = 0; i < photographers.length; i++) {    
+    h3[i].innerHTML = photographers[i].name;
+    city[i].innerHTML = photographers[i].city;  
+    description[i].innerHTML = photographers[i].tagline;
+    rate [i].innerHTML = "$" + photographers[i].price +"/day";  
+  }  
+
+
+ 
 
   
