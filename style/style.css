@@ -437,7 +437,7 @@ color: #901C1C;
 .colLike{
   width: 20%;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 16px;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -457,7 +457,7 @@ color: #901C1C;
 /*Floating Tab*/
 
 .BackButton{
-width:300px;
+width:200px;
 height:45px;
 background-color:#DB8876;
 color:#000000;
@@ -477,11 +477,25 @@ position: relative;
 }
 
 .columnNumer{
-width: 50%;
+width: 70%;
+font-style: normal;
+font-weight: 400;
+color: #000000;
+text-align: right;
+padding-right: 20px;
+justify-content: center;
+padding-top: 10px;
 }
 
 .columnRate{
-width: 50%;
+width: 30%;
+font-style: normal;
+font-weight: 400;
+color: #901C1C;
+text-align: right;
+padding-right: 20px;
+justify-content: center;
+padding-top: 10px;
 }
 
 /*Modal*/

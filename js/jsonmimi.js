@@ -22,7 +22,7 @@ var mediajson = {"media": [
     {
       "id": 2525345343,
       "photographerId": 243,
-      "alt" : "Porttrait It is Wednesday",
+      "alt" : "Portrait It is Wednesday",
       "image": "Portrait_Wednesday.jpg",
       "tags": ["portait"],
       "likes": 34,
@@ -104,7 +104,8 @@ var mediajson = {"media": [
 //Javascript  to populate html with JSON
 
 
- var json = {"photographers": [
+ var json, x 
+ json= {"photographers": [
     {
       "name": "Mimi Keel",
       "id": 243,
@@ -122,24 +123,35 @@ var mediajson = {"media": [
   var h3 = document.getElementsByClassName('monoId');
   var city = document.getElementsByClassName('monoLocation');
   var description = document.getElementsByClassName('monoDescription');
-  //Declare tags here
+  var rate = document.getElementsByClassName('columnRate')
+  var totalLikes = document.getElementsByClassName('columnNumer');
+  var taggies = document.getElementsByClassName('hashTagPro');
   var photographers = json.photographers;
   for(var i = 0; i < photographers.length; i++) {    
     h3[i].innerHTML = photographers[i].name;
     city[i].innerHTML = photographers[i].city;  
     description[i].innerHTML = photographers[i].tagline;
-     
+    taggies[i].innerHTML = "#" + photographers[i].tags[0];
+    rate[i].innerHTML = photographers[i].price + "$";
+    totalLikes[i].innerHTML = "297 081" + ' <i class="fas fa-heart" aria-hidden="true"></i>';
   }  
+  
 
-
-//Populate sections
+ //Populate sections
  var cDescription = document.getElementsByClassName("colName");
  var cPrice = document.getElementsByClassName("colPrice");
  var cLike = document.getElementsByClassName("colLike");
+ var cCaption = document.getElementsByClassName("caption");
  var  media = mediajson.media;
  for(var i = 0; i < media.length; i++) {    
   cDescription[i].innerHTML = media[i].alt;
-  cPrice [i].innerHTML = media[i].price;  
-  cLike[i].innerHTML = media[i].likes;
+  cPrice [i].innerHTML = media[i].price + "$";  
+  cLike[i].innerHTML = media[i].likes + ' <i class="fas fa-heart" aria-hidden="true"></i>';
+  cCaption [i].innerHTML = media[i].alt;
    
 }  
+
+
+ //Populate tags
+ 
+ 
