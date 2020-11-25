@@ -125,18 +125,24 @@ var mediajson = {"media": [
   var description = document.getElementsByClassName('monoDescription');
   var rate = document.getElementsByClassName('columnRate')
   var totalLikes = document.getElementsByClassName('columnNumer');
-  var taggies = document.getElementsByClassName('hashTagPro');
+  var taggies = document.getElementsByClassName('hashOne');
+  var taggiesII = document.getElementsByClassName('hashTwo');
+  var taggiesIII = document.getElementsByClassName('hashThree');
+  var taggiesIV = document.getElementsByClassName('hashFour');
   var photographers = json.photographers;
   for(var i = 0; i < photographers.length; i++) {    
     h3[i].innerHTML = photographers[i].name;
     city[i].innerHTML = photographers[i].city;  
     description[i].innerHTML = photographers[i].tagline;
     taggies[i].innerHTML = "#" + photographers[i].tags[0];
+    taggiesII[i].innerHTML = "#" + photographers[i].tags[1];
+    taggiesIII[i].innerHTML = "#" + photographers[i].tags[2];
+    taggiesIV[i].innerHTML = "#" + photographers[i].tags[3];
     rate[i].innerHTML = photographers[i].price + "$";
     totalLikes[i].innerHTML = "297 081" + ' <i class="fas fa-heart" aria-hidden="true"></i>';
-  }  
-  
+  }
 
+  
  //Populate sections
  var cDescription = document.getElementsByClassName("colName");
  var cPrice = document.getElementsByClassName("colPrice");
