@@ -411,23 +411,38 @@ cursor: pointer;
 
 .numbertext{
   color: #901C1C;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
 .colName{
-width: 50%;
-background-color: aqua;
+width: 60%;
+padding-left: 13px;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+color: #901C1C;
 }
 
 .colPrice{
- width: 25%;
- background-color: pink;
+ width: 20%;
+ padding-left: 12px;
+ font-size: 13px;
+ font-style: normal;
+ font-weight: 600;
+ color: #901C1C; 
+ text-align: right;
 }
 
 .colLike{
-  width: 25%;
-  background-color: purple;
+  width: 20%;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: #901C1C;
+  text-align: right;
  }
 
 .squarePicture{
