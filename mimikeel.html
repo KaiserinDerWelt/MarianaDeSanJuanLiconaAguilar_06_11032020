@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="style/modal.css">
 <link rel="stylesheet" href="style/mediaqueries.css">
 <script src="https://kit.fontawesome.com/ecd8d824a5.js" crossorigin="anonymous"></script>
-
 <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
@@ -48,11 +47,11 @@
     <div class="filterBox">
       <p class="orderBy">Order by</p>
       <div class="custom-select">
-        <select>
-          <option value="0">Popularity</option>
-          <option value="0">Popularity</option>
-          <option value="1">Date</option>
-          <option value="2">Title</option>
+        <select  id="myChoise">
+          <option value="0" onclick="filterSelection('all')">Popularity</option>
+          <option value="0" onclick="filterSelection('all')">Popularity</option>
+          <option value="1" onclick="filterSelection('date')">Date</option>
+          <option value="2" onclick="filterSelection('popularity')">Title</option>
         </select>
       </div>
     </div>
@@ -61,7 +60,7 @@
     <!--First row of items-->
     <div class="containerColumnsPicture">
   
-        <div class="cardDisplay"> <!--*onclick="openModalBox();currentSlide(1)"-->
+        <div class="cardDisplay date popularity"> <!--*onclick="openModalBox();currentSlide(1)"-->
           <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="currentSlide(1)"></a>
         <div class="carrouselDescription">
           <div class="colName"></div>
@@ -179,7 +178,7 @@
     <div class="content">
       <span class="close" onclick="closeModal()"></span>
       <div class="modal-body">
-        <form name="reserve" action="profile.html" method="get" onsubmit="return validate();">
+        <form name="reserve" action="index.html" method="get" onsubmit="return validate();">
           <p class="headerModal">Contact  me</p>
           <p class="headerModal">Mimi Kell</p>
           <div
@@ -202,8 +201,8 @@
           <textarea  class="textarea" name="message" rows="6" cols="18" id="myText"></textarea><br>
             <div class="error" id="messageError"></div>
             <br>
-            <br>
-          <input class="btn-submit button" type="submit" value="Send"/>
+            
+          <button class="btn-submit button" type="submit" role="button" value="Send">Send</button>
         </form>
       </div>
     </div>

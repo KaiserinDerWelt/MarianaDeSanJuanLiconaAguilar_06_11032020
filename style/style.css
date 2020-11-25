@@ -10,9 +10,9 @@ body{
   height: 20px;
 }
 
-*:focus {
+/**:focus {
 outline:none;
-}
+}*/
 .menu{
   display: flex;
 }
@@ -229,7 +229,7 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 90%;
-  
+
 }
 
 .monoId{

@@ -77,3 +77,8 @@ function closeAllSelect(elmnt) {
 }
 /*Close the box on click*/
 document.addEventListener("click", closeAllSelect);
+
+
+//Filter by tittle
+//Filter by date
+//Filter by popularity
