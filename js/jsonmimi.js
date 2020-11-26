@@ -148,19 +148,22 @@ var mediajson = {"media": [
  var cPrice = document.getElementsByClassName("colPrice");
  var cLike = document.getElementsByClassName("colLike");
  var cCaption = document.getElementsByClassName("caption","colName");
-
+ const image = document.createElement('img')
  var  media = mediajson.media;
+ 
  for(var i = 0; i < media.length; i++) {    
   cDescription[i].innerHTML = media[i].alt;
   cPrice [i].innerHTML = media[i].price + "$";  
   cLike[i].innerHTML = media[i].likes + ' <i class="fas fa-heart" aria-hidden="true"></i>';
   cCaption[i].innerHTML = media[i].alt;
+  
 }  
 
 
  //Dropdown to filter by date and more to less likes.
  // Parse json images to html img src.
  // Add alt description
+ //Lightbox on keboard click
 
        
  

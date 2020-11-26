@@ -21,3 +21,11 @@ function closeModal(){
 function closeSuccess(){
   modalbg.style.display ="none";
 }
+
+
+//Close modal with esc for accesibility affairs
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    modalbg.style.display = 'none'
+  }
+})
