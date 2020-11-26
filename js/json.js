@@ -71,12 +71,21 @@
   var city = document.getElementsByClassName('location');
   var description = document.getElementsByClassName('description');
   var rate = document.getElementsByClassName('rate');
+  /*var tag1 = document.getElementsByClassName('one');
+  var tag2 = document.getElementsByClassName('two');
+  var tag3 = document.getElementsByClassName('three');*/
   var photographers = json.photographers;
   for(var i = 0; i < photographers.length; i++) {    
     h3[i].innerHTML = photographers[i].name;
     city[i].innerHTML = photographers[i].city;  
     description[i].innerHTML = photographers[i].tagline;
-    rate [i].innerHTML = "$" + photographers[i].price +"/day";  
+    rate [i].innerHTML = "$" + photographers[i].price +"/day";
+     //Better create a loop to pull the array values by class name #Hashtag Index
+    /*tag1[i].innerHTML = "#" + photographers[i].tags[0];
+    tag2[i].innerHTML = "#" + photographers[i].tags[1];
+    tag3[i].innerHTML = "#" + photographers[i].tags[2];
+    tag4[i].innerHTML = "#" + photographers[i].tags[3];*/
+   
   }  
 
 

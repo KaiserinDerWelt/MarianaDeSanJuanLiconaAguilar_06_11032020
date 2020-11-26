@@ -3,8 +3,8 @@ var mediajson = {"media": [
       "id": 623534343,
       "photographerId": 243,
       "alt" : "Travel Lonesome",
-      "image": "Travel_Lonesome.jpg",
-      "tags": ["travel"],
+      "image": "Animals_Rainbow.jpg",
+      "tags": ["travel"],    
       "likes": 88,
       "date": "2019-02-03",
       "price": 45
@@ -143,21 +143,25 @@ var mediajson = {"media": [
   }
 
   
- //Populate sections
+ //Populate sections media
  var cDescription = document.getElementsByClassName("colName");
  var cPrice = document.getElementsByClassName("colPrice");
  var cLike = document.getElementsByClassName("colLike");
- var cCaption = document.getElementsByClassName("caption");
+ var cCaption = document.getElementsByClassName("caption","colName");
+
  var  media = mediajson.media;
  for(var i = 0; i < media.length; i++) {    
   cDescription[i].innerHTML = media[i].alt;
   cPrice [i].innerHTML = media[i].price + "$";  
   cLike[i].innerHTML = media[i].likes + ' <i class="fas fa-heart" aria-hidden="true"></i>';
-  cCaption [i].innerHTML = media[i].alt;
-   
+  cCaption[i].innerHTML = media[i].alt;
 }  
 
 
- //Populate tags
+ //Dropdown to filter by date and more to less likes.
+ // Parse json images to html img src.
+ // Add alt description
+
+       
  
- 
+  

@@ -45,13 +45,13 @@
   </div>
   <div class="filterContainer">
     <div class="filterBox">
-      <p class="orderBy">Order by</p>
+      <label class="orderBy" for="myChoise">Order by</label>
       <div class="custom-select">
-        <select  id="myChoise">
-          <option value="0" onclick="filterSelection('all')">Popularity</option>
-          <option value="0" onclick="filterSelection('all')">Popularity</option>
-          <option value="1" onclick="filterSelection('date')">Date</option>
-          <option value="2" onclick="filterSelection('popularity')">Title</option>
+        <select  id="myChoise" name="selections" role="listbox"> 
+          <option value="0" onkeypress="" role="option">Popularity</option>
+          <option value="0" onkeypress="" role="option">Popularity</option>
+          <option value="1" onkeypress="" role="option">Date</option>
+          <option value="2" onkeypress="" role="option">Title</option>
         </select>
       </div>
     </div>
@@ -60,8 +60,8 @@
     <!--First row of items-->
     <div class="containerColumnsPicture">
   
-        <div class="cardDisplay date popularity"> <!--*onclick="openModalBox();currentSlide(1)"-->
-          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="currentSlide(1)"></a>
+        <div class="cardDisplay title popularity date">
+          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="currentSlide(1)" id="test"></a>
         <div class="carrouselDescription">
           <div class="colName"></div>
           <div class="colPrice"></div>
@@ -69,8 +69,8 @@
         </div>
        </div>
        
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="currentSlide(2)"></a>
+        <div class="cardDisplay title popularity">
+          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="currentSlide(2)" id=""></a>
       <div class="carrouselDescription">
         <div class="colName"></div>
           <div class="colPrice"></div>
@@ -79,8 +79,8 @@
         </div>
        
        
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="currentSlide(3)"></a>
+        <div class="cardDisplay title date">
+          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="currentSlide(3)" id=""></a>
       <div class="carrouselDescription">
         <div class="colName"></div>
           <div class="colPrice"></div>
@@ -92,7 +92,8 @@
     <!--Second row of items-->
     <div class="containerColumnsPicture">
       
-        <div class="cardDisplay"><a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="currentSlide(4)"></a>
+        <div class="cardDisplay title popularity">
+          <a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="currentSlide(4)" id=""></a>
         <div class="carrouselDescription">
           <div class="colName"></div>
           <div class="colPrice"></div>
@@ -101,8 +102,8 @@
         </div>
        
        
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="currentSlide(5)"></a>
+        <div class="cardDisplay title popularity date">
+          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="currentSlide(5)" id=""></a>
       <div class="carrouselDescription">
         <div class="colName"></div>
           <div class="colPrice"></div>
@@ -111,8 +112,8 @@
         </div>
        
        
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="currentSlide(6)"></a>
+        <div class="cardDisplay title">
+          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="currentSlide(6)" id=""></a>
       <div class="carrouselDescription">
         <div class="colName"></div>
         <div class="colPrice"></div>
@@ -121,7 +122,7 @@
         </div>
        
     </div>
-    <div class="BackButton">
+    <div class="BackButton title">
       <div class="containerFloat">
         <div class="columnNumer"></div>
         <div class="columnRate"></div>
