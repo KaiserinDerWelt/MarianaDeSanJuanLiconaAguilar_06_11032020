@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fish Eye</title>
+  <meta name="description" content="">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/modal.css">
+<link rel="stylesheet" href="style/mediaqueries.css">
+<script src="https://kit.fontawesome.com/ecd8d824a5.js" crossorigin="anonymous"></script>
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navigationProfile">
+    <a href="index.html"><img class="logo" src="img/logo.png" alt="logo-eye-fish-agency"></a>
+  </nav><!--Intro Section-->
+  <div class="containerFiltersandProfile">
+    <div class="containerColumnsFilter">
+      <div class="profileDescription">
+      <div class="itemColumnFilter">
+        <div class="cardPicture">
+          <p class="monoId"> </p>
+          <p class="monoLocation"></p>
+          <p class="monoDescription"></p>
+          <div class="monotags">
+            
+          </div>
+        </div>
+       </div>
+       <div class="itemColumnFilter">
+        <div class="cardPicture">
+          <button class="btn contactButton"  type="button" onclick="launchModal()">Contact Me</button>
+        </div>
+       </div>
+       </div>
+       <div class="itemColumnFilter">
+        <div class="cardPictureProfile">
+          <a href="#"><img id='profileImage' alt="mimi-keel-photography"  class="roundPictureIndividual" ></a>
+        </div>
+       </div>
+    </div>
+  </div>
+
+  <div class="filterContainer">
+    <div class="filterBox">
+      <label class="orderBy" for="myChoise">Order by</label>
+      <div class="custom-select">
+        <select  id="myChoise" name="selections" role="listbox" tabindex="0"> 
+          <option value="0" role="option" tabindex="0">Popularity</option>
+          <option value="0" role="option" tabindex="0">Popularity</option>
+          <option value="1" role="option" tabindex="0">Date</option>
+          <option value="2" role="option" tabindex="0">Title</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="containerPortfolio">
+    <!--First row of items-->
+    <div class="containerColumnsPicture"></div>
+
+    <div class="BackButton">
+      <div class="containerFloat">
+        <div class="columnNumer">
+          <span class="displayLikes">0</span>
+          <i class="fas fa-heart" aria-hidden="true"></i>
+        </div>
+        <div class="columnRate"></div>
+      </div>
+    </div>
+  </div>
+  <!--Modal pic-->
+  <div id="myModal" class="modalDisplay">
+    <span class="closePicture" onclick="closeModalBox()">&times;</span>
+    <div class="modal-content">
+  
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <!--Form Added Here-->
+  <div class="bground">
+    <div class="content">
+      <span class="close" onclick="closeModal()"></span>
+      <div class="modal-body">
+        <form name="reserve" action="index.html" method="get" onsubmit="return validate();">
+          <p class="headerModal">Contact  me</p>
+          <p class="headerModal headerModal__name"></p>
+          <div
+            class="formData">
+            <label for="first">First Name</label><br>
+            <input class="text-control" type="text" id="first" name="first"/><br>
+            <div class="error" id="firstError"></div>
+          </div>
+          <div class="formData"> 
+            <label for="last">Last Name</label><br>
+            <input class="text-control" type="text" id="last" name="last"/><br>
+            <div class="error" id="lastError"></div>
+          </div>
+          <div class="formData">
+            <label for="email">Email</label><br>
+            <input class="text-control" type="text" id="email" name="email"/><br>
+            <div class="error" id="mailError"></div>
+          </div>
+          <label>Your message </label><br>
+          <textarea  class="textarea" name="message" rows="6" cols="18" id="myText"></textarea><br>
+            <div class="error" id="messageError"></div>
+            <br>
+            
+          <button class="btn-submit button" type="submit" role="button" value="Send">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/modal.js"></script>
+  <script src="js/modalvalidator.js"></script>
+  <script src="js/lightbox.js"></script>
+  <!-- <script src="js/jsonmimi.js"></script> -->
+  <script src="js/db.js"></script>
+  <script>
+    const photographerId = 82
+    const photosFolder = 'img/Tracy'
+  </script>
+  <script src="js/renderer.js"></script>
+  <script src="js/filterDropdown.js"></script>
+
+</body>
+</html>

@@ -18,16 +18,14 @@
   </nav><!--Intro Section-->
   <div class="containerFiltersandProfile">
     <div class="containerColumnsFilter">
+      <div class="profileDescription">
       <div class="itemColumnFilter">
         <div class="cardPicture">
           <p class="monoId"> </p>
           <p class="monoLocation"></p>
           <p class="monoDescription"></p>
           <div class="monotags">
-            <p class="hashTagPro hashOne">#Tag</p>
-            <p class="hashTagPro hashTwo">#tagTwo</p>
-            <p class="hashTagPro hashThree">#tagThree</p>
-            <p class="hashTagPro hashFour">#tagFour</p>
+            
           </div>
         </div>
        </div>
@@ -36,95 +34,38 @@
           <button class="btn contactButton"  type="button" onclick="launchModal()">Contact Me</button>
         </div>
        </div>
+       </div>
        <div class="itemColumnFilter">
         <div class="cardPictureProfile">
-          <a href="#"><img src="img/ID/MimiKeel.jpg" alt="mimi-keel-photography"  class="roundPictureIndividual" ></a>
+          <a href="#"><img id='profileImage' alt="mimi-keel-photography"  class="roundPictureIndividual" ></a>
         </div>
        </div>
     </div>
   </div>
+
   <div class="filterContainer">
     <div class="filterBox">
       <label class="orderBy" for="myChoise">Order by</label>
       <div class="custom-select">
         <select  id="myChoise" name="selections" role="listbox" tabindex="0"> 
-          <option value="0" onkeypress="" role="option" tabindex="0">Popularity</option>
-          <option value="0" onkeypress="" role="option" tabindex="0">Popularity</option>
-          <option value="1" onkeypress="" role="option" tabindex="0">Date</option>
-          <option value="2" onkeypress="" role="option" tabindex="0">Title</option>
+          <option value="0" role="option" tabindex="0">Popularity</option>
+          <option value="0" role="option" tabindex="0">Popularity</option>
+          <option value="1" role="option" tabindex="0">Date</option>
+          <option value="2" role="option" tabindex="0">Title</option>
         </select>
       </div>
     </div>
   </div>
   <div class="containerPortfolio">
     <!--First row of items-->
-    <div class="containerColumnsPicture">
-  
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MimiKeel.jpg" alt=""  class="squarePicture" onclick="currentSlide(1)" id="test" data-lightbox="lightboxImage" aria-hidden="true"></a>
-        <div class="carrouselDescription">
-          <div class="colName"></div>
-          <div class="colPrice"></div>
-          <div class="colLike"></div>
-        </div>
-       </div>
-       
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/EllieRoseWilkens.jpg" alt=""  class="squarePicture" onclick="currentSlide(2)" id=""></a>
-      <div class="carrouselDescription">
-        <div class="colName"></div>
-          <div class="colPrice"></div>
-          <div class="colLike"></div>
-    </div>
-        </div>
-       
-       
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/TracyGalindo.jpg" alt=""  class="squarePicture" onclick="currentSlide(3)" id=""></a>
-      <div class="carrouselDescription">
-        <div class="colName"></div>
-          <div class="colPrice"></div>
-          <div class="colLike"></div>
-    </div>
-        </div>
-       
-    </div>
-    <!--Second row of items-->
-    <div class="containerColumnsPicture">
-      
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/NabeelBrandford.jpg" alt="" class="squarePicture" onclick="currentSlide(4)" id=""></a>
-        <div class="carrouselDescription">
-          <div class="colName"></div>
-          <div class="colPrice"></div>
-          <div class="colLike"></div>
-          </div>
-        </div>
-       
-       
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/RhodeDubois.jpg" alt=""  class="squarePicture" onclick="currentSlide(5)" id=""></a>
-      <div class="carrouselDescription">
-        <div class="colName"></div>
-          <div class="colPrice"></div>
-          <div class="colLike"></div>
-        </div>
-        </div>
-       
-       
-        <div class="cardDisplay">
-          <a href="#"><img src="img/ID/MarcelNikolic.jpg" alt=""  class="squarePicture" onclick="currentSlide(6)" id=""></a>
-      <div class="carrouselDescription">
-        <div class="colName"></div>
-        <div class="colPrice"></div>
-        <div class="colLike"></div>
-      </div>
-        </div>
-       
-    </div>
+    <div class="containerColumnsPicture"></div>
+
     <div class="BackButton">
       <div class="containerFloat">
-        <div class="columnNumer"></div>
+        <div class="columnNumer">
+          <span class="displayLikes">0</span>
+          <i class="fas fa-heart" aria-hidden="true"></i>
+        </div>
         <div class="columnRate"></div>
       </div>
     </div>
@@ -134,44 +75,6 @@
     <span class="closePicture" onclick="closeModalBox()">&times;</span>
     <div class="modal-content">
   
-      <div class="mySlides">
-        <img src="img/ID/MimiKeel.jpg"  class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <div class="mySlides">
-        <img src="img/ID/EllieRoseWilkens.jpg"  class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <div class="mySlides">
-        <img src="img/ID/TracyGalindo.jpg"  class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <div class="mySlides">
-        <img src="img/ID/NabeelBrandford.jpg"  class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <div class="mySlides">
-        <img src="img/ID/RhodeDubois.jpg"  class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <div class="mySlides">
-        <img src="img/ID/MarcelNikolic.jpg" class="imgShow">
-        <div class="caption-container">
-          <p class="caption"></p>
-        </div>
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </div>
   <!--Form Added Here-->
@@ -181,7 +84,7 @@
       <div class="modal-body">
         <form name="reserve" action="index.html" method="get" onsubmit="return validate();">
           <p class="headerModal">Contact  me</p>
-          <p class="headerModal">Mimi Kell</p>
+          <p class="headerModal headerModal__name"></p>
           <div
             class="formData">
             <label for="first">First Name</label><br>
@@ -208,10 +111,18 @@
       </div>
     </div>
   </div>
-  <script src="js/filterDropdown.js"></script>
+  
   <script src="js/modal.js"></script>
   <script src="js/modalvalidator.js"></script>
-  <script src="js/jsonmimi.js"></script>
   <script src="js/lightbox.js"></script>
+  <!-- <script src="js/jsonmimi.js"></script> -->
+  <script src="js/db.js"></script>
+  <script>
+    const photographerId = 243
+    const photosFolder = 'img/Mimi'
+  </script>
+  <script src="js/renderer.js"></script>
+  <script src="js/filterDropdown.js"></script>
+
 </body>
 </html>

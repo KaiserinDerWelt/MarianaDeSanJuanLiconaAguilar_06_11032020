@@ -163,7 +163,10 @@ var mediajson = {"media": [
  //Dropdown to filter by date and more to less likes.
  // Parse json images to html img src.
  // Add alt description
- //Lightbox on keboard click
+ //Basically the json must populate 7 pages like mimikeel for different photgraphers better create
+ //a literal template ?
+ //Json api, firebase real database and any framework is allowed!! awful!
+ //Media queries for shrinking browser.
 
        
  
