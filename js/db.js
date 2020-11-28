@@ -253,7 +253,7 @@ const db = {
             "id": 83958935,
             "photographerId": 925,
             "alt" : "Animals Fotography Puppiness",
-            "video": "Animals_Puppiness.mp4",
+            "video": "Animals_Puppiness.mp4", 
             "tags": ["animals"],
             "likes": 52,
             "date": "2016-06-12",
@@ -496,7 +496,7 @@ const db = {
             "id": 235234343,
             "photographerId": 195,
             "alt" : "Travel Photography Adventure Door",
-            "image": "Travel_Adventure_Door.jpg",
+            "image": "Travel _Adventure_Door.jpg",//Example of error in json
             "tags": ["travel"],
             "likes": 63,
             "date": "2019-06-26",
@@ -506,7 +506,7 @@ const db = {
             "id": 6234234343,
             "photographerId": 195,
             "alt" : "Architecture Photography Contrast",
-            "image": "Architecture_Contrast.jpg",
+            "image": "Architecure_Contrast.jpg", //Example of error in json
             "tags": ["architecture"],
             "likes": 52,
             "date": "2019-06-30",

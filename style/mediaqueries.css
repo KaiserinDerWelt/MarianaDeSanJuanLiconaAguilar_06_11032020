@@ -93,5 +93,14 @@
   .BackButton{
     display: none;
   }
+
+  .contactButton{
+    position: fixed;
+    z-index: 1;
+    bottom: 5px;
+    left: 28%;
+    right: 0%;
+    text-align: center;
+  }
    
 }
