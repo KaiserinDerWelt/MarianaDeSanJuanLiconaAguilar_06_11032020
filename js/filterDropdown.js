@@ -31,10 +31,12 @@ for (i = 0; i < l; i++) {
         h = this.parentNode.previousSibling;
         for (i = 0; i < sl; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
+            
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
             yl = y.length;
+            changeOrder(s.options[i].innerHTML)
             for (k = 0; k < yl; k++) {
               y[k].removeAttribute("class");
             }
@@ -77,8 +79,3 @@ function closeAllSelect(elmnt) {
 }
 /*Close the box on click*/
 document.addEventListener("click", closeAllSelect);
-
-
-//Filter by tittle
-//Filter by date
-//Filter by popularity

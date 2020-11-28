@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navigation">
+  <nav class="navigation hide-sm">
     <div class="menu">
       <a href="index.html"><img class="logo" src="img/logo.png" alt="logo-eye-fish-agency"></a>
       <div id="btnContainer">
@@ -28,7 +28,23 @@
   </nav>
     
    
-  <h1>Our photographers</h1>
+  <h1 class="hide-sm">Our photographers</h1>
+
+  <div class="navbar-small show-sm">
+    <a href="index.html"><img class="logo" src="img/logo.png" alt="logo-eye-fish-agency"></a>
+    <h1>Our photographers</h1>
+    <div id="btnContainer">
+      <button class="btn topTag" onclick="filter('portraits')">#Portrait</button>
+      <button class="btn topTag" onclick="filter('art')">#Art</button>
+      <button class="btn topTag" onclick="filter('fashion')">#Fashion</button>
+      <button class="btn topTag" onclick="filter('architecture')">#Architecture</button>
+      <button class="btn topTag" onclick="filter('travel')">#Travel</button>
+      <button class="btn topTag" onclick="filter('sports')">#Sport</button>
+      <button class="btn topTag" onclick="filter('animals')">#Animals</button>
+      <button class="btn topTag" onclick="filter('events')">#Events</button>
+    </div>
+  </div>
+
   <div class="containerFreelancers">
     <!--Second row of items-->
     <div class="containerColumns">

@@ -1,268 +1,97 @@
-@media (min-width:1025px) {
-   /* big landscape tablets, laptops, and desktops */ 
+@media (min-width: 1200px) {
+  .show-sm {
+       display: none!important;
   }
+}
 
-  @media (min-width:768px)  { 
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (max-width:1200px) {
+/* big landscape tablets, laptops, and desktops */ 
+.hide-sm {
+     display: none!important;
+}
+.containerColumns{
+  grid-template-columns: 1fr 1fr;
+}
+.containerColumnsPicture{
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width:768px)  { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+.containerColumns{
+  grid-template-columns: 1fr;
+}
+.containerColumnsPicture{
+  grid-template-columns: 1fr;
+}
+
+.navbar-small h1 {
+  font-size: 25px;
+}
+
+.profileDescription {
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerColumnsFilter{
+ flex-direction: column-reverse;
+ align-items: center;
+ margin: 0;
+ padding: 0;
+}
+
+.cardPictureProfile {
+ justify-content: center;
+}
+
+.cardPictureProfile img {
+ margin: 0;
+ padding: 0;
+}
+
+.cardPicture {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0;
+ padding: 0;
+}
+
+.cardPicture p {
+ margin-left: 0!important;
+}
+
+.headerModal {
+ font-size: 48px;
+}
+
+.formData label {
+ font-size: 28px;
+}
+
+.textarea {
+ width: 90%;
+}
+.content {
+ width: 90%;
+}
+
+.text-control {
+ width: 90%;
+}
+
 }
 
 
 @media (max-width: 480px){
- /* *{
-      outline: 2px solid red;
-     }*/
+/* *{
+   outline: 2px solid red;
+  }*/
 
-   html,body{
-      /*overflow: auto;*/
-      max-height: fit-content;
-   }
-
-   .navigation {
-      float: left;
-      width: 40%;
-      height: 20px;
+  .BackButton{
+    display: none;
   }
-
-   .menu {
-      display: flex;
-      position: absolute;
-  }
-
-   .logo {
-      width: 100px;
-      height: auto;
-      padding-left: 10px;
-   }
-
-   .hashTag{
-      background: #FFFFFF;
-      border-radius: 13px;
-      border-width:20px;
-      display: inline-block;
-      height: 26px;
-      line-height: 26px;
-      padding: 0 5px 0 5px;
-      position: relative;
-      margin: 0 10px 10px 0;
-      border: #C4C4C4;;
-      border-style: solid;
-      border-width: 0.5px;
-      color: #901C1C;
-      font-size: 11px;
-    }
-
-    .topTag{
-      background: #FFFFFF;
-      border-radius: 13px;
-      border-width:20px;
-      display: inline-block;
-      height: 26px;
-      width: auto;
-      padding-left: 7px;
-      padding-right: 7px;
-      position: relative;
-      margin: 0 10px 10px 0;
-      border: #C4C4C4;;
-      border-style: solid;
-      border-width: 0.5px;
-      color: #901C1C;
-      font-size: 12px;
-      margin-top: 11px;
-    }
-
-    h1{
-      font-size: 16px;
-      font-weight: 400;
-      color: #901C1C;
-      font-style: normal;
-      display: flex;
-      justify-content: flex-end;
-  }
-
-  .cardPicture {
-   margin-top: 10px;
-   margin-bottom: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-}
-   #btnContainer{
-    display: flex;
-    margin-top: 50px;
-    margin-left: -154px;
-    flex-wrap: wrap;
-    justify-content: center;
-   }
-
-  .containerFreelancers{
-   margin-top: 100px;
-   background-color: #FFFFFF;
-   }
-
-   .containerColumns{
-      display: flex;
-      flex-direction: column;
-   }
-   .contactButton{
-      background-color: #901C1C; 
-      border-color: #901C1C; 
-      border-style: solid;
-      border-radius: 5px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      right: 29%;
-      bottom: 0;
-      position: fixed;
-      z-index: 1;
-      }
-
-      .contactButton:hover{
-         background-color: #D3573C;
-         color: #000000;
-         border-color: #D3573C;
-         border-style: solid;
-       }
-
-      .roundPictureIndividual {
-         width: 99px;
-         height: 99px;
-         border-radius: 50%;
-         display: block;
-         margin-right: 25px;
-         object-fit: cover;
-     }
-
-     .hashTagPro{
-      background: #FFFFFF;
-      border-radius: 13px;
-      border-width:20px;
-      display: inline-block;
-      height: 26px;
-      line-height: 26px;
-      padding: 0 5px 0 5px;
-      position: relative;
-      margin: 0 10px 10px 0;
-      border: #C4C4C4;;
-      border-style: solid;
-      border-width: 0.5px;
-      color: #901C1C;
-      font-size: 11px;
-    }
-
-     .monotags{
-      margin-left: 22px;
-      display: flex;
-      flex-wrap: wrap;
-      position: absolute;
-    }
-
-      .monoId{
-         font-size: 18px;
-         font-weight: 400;
-         font-style: normal;
-         color: #BF5138;
-         text-align: left !important; /*Over writes*/
-         margin-left: 25px !important;
-         margin-top: 7px;
-         margin-bottom: 7px;
-       }
-
-       .monoLocation{
-         font-size: 12px !important;
-         font-style: normal;
-         font-weight: 400;
-         color: #901C1C;
-         margin-left: 25px !important;
-         text-align: left !important; 
-         margin-top: 1px !important;
-         margin-bottom: 1px !important;
-        }
-
-        .monoDescription{
-         font-size: 10px !important;
-         font-style: normal;
-         font-weight: 400;
-         color: #525252;
-         margin-left: 25px !important;
-         text-align: left !important; 
-         margin-top: 7px !important;
-         margin-bottom: 7px !important;
-       }
-
-       .filterBox {
-         display: flex;
-         position: relative;
-         align-items: center;
-         margin-top: 40px;
-     }
-
-   .containerColumnsPicture{
-      display: flex;
-      flex-direction: column;
-      background-color: lightcoral;
-    }
-
-    .cardDisplay{
-       background-color: lightgreen;
-    }
-
-    .cardPictureProfile{
-      width: 100px;
-      background-color: white;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .squarePicture {
-      width: 252px;
-      height: 400px;
-      display: block;
-      margin: 0px auto;
-      object-fit: cover;
-  }
-
-    .BackButton{
-      width:300px;
-      height:45px;
-      background-color:#DB8876;
-      color:#000000;
-      border-radius:8px;
-      text-align:center;
-      box-shadow: 2px 2px 3px #999;
-      font-size:20px;
-      right: 0;
-      bottom: 0;
-      position: fixed;
-      margin-right: 45px;
-      display: none;
-      }
-
-      .imgShow {
-         width: 270px;
-         height: 450px;
-         display: block;
-         margin: 10px auto;
-         object-fit: cover;
-         padding-right: 1px;
-     }
-
-     .headerModal {
-      font-size: 50px;
-      color: #000000;
-      font-weight: 400;
-      font-style: normal;
-      text-align: left !important;
-      margin-top: -20px;
-      margin-bottom: 5px;
-  }
-
-      
+   
 }

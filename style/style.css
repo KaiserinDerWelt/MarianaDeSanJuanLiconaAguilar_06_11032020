@@ -2,7 +2,6 @@ body{
   margin: 40px;
   margin-top: 30px;
   font-family: 'DM Sans', sans-serif;
-  overflow-y: scroll;
 }
 .navigation{
   float: left;
@@ -137,6 +136,8 @@ p {
 
 .tags{
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
   position: relative;
   font-weight: 600px;
   font-size: 12px;
@@ -181,7 +182,6 @@ p {
 }
 
 .itemColumnFilter{
-  width: 500px;
   height: auto;
   background-color: #FFFFFF;
 }
@@ -211,7 +211,10 @@ p {
 /*Pictures Section*/
 
 .containerColumnsPicture{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .itemColumnPicture{
@@ -222,13 +225,10 @@ p {
 
 .cardDisplay{
   background-color: #FFFFFF;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -266,6 +266,9 @@ p {
 }
 .monotags{
   margin-left: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .containerFreelancers{
@@ -304,7 +307,7 @@ padding: 15px 32px;
 text-align: center;
 text-decoration: none;
 font-size: 16px;
-margin: 4px 2px;
+margin: 40px 2px;
 cursor: pointer;
 }
 
@@ -333,6 +336,8 @@ cursor: pointer;
   display: flex;
   position: relative;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .orderBy{
@@ -406,6 +411,10 @@ cursor: pointer;
 .carrouselDescription{
     display: flex;
     position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
 
 }
 
@@ -446,8 +455,8 @@ color: #901C1C;
  }
 
 .squarePicture{
-  width: 342px;
-  height: 400px;
+  width: 90%;
+  height: 300px;
   display: block;
   margin: 0px auto;
   object-fit: cover;
@@ -528,6 +537,7 @@ padding-top: 10px;
   overflow: auto;
   background-color: #FFFFFF;
   overflow: inherit;
+  justify-content: center;
 }
 
 /* Modal Content */
@@ -594,10 +604,11 @@ padding-top: 10px;
 }
 
 .imgShow{
-  width:auto;
-  height: 450px;
+  width: 90vmin;
+  height: 80vh;
   display: block;
   margin: 10px auto;
+  object-fit: contain;
 }
 
 img.demo {
@@ -615,4 +626,27 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.navbar-small h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#btnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profileDescription {
+  display: flex;
+  width: 80%;
 }
