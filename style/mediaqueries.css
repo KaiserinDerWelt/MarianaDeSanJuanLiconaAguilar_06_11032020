@@ -102,5 +102,20 @@
     right: 0%;
     text-align: center;
   }
+
+  
+
+    @media (min-width:320px)  {
+      /* smartphones, iPhone, portrait 480x320 phones */ 
+      .colName{
+        width: 70%;
+        font-size: 13px;
+        font-style: normal;
+        padding-left: 0px;
+        font-weight: 600;
+        color: #901C1C;
+        margin-left: -5px!important;
+        }
+     }
    
 }

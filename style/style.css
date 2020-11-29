@@ -411,9 +411,9 @@ cursor: pointer;
 .carrouselDescription{
     display: flex;
     position: relative;
-    width: 80%;
+    width: 95%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 7px;
     margin-top: 20px;
 
 }
@@ -425,7 +425,7 @@ cursor: pointer;
 }
 
 .colName{
-width: 60%;
+width: 70%;
 padding-left: 13px;
 font-size: 13px;
 font-style: normal;
@@ -434,7 +434,7 @@ color: #901C1C;
 }
 
 .colPrice{
- width: 20%;
+ width: 15%;
  padding-left: 12px;
  font-size: 13px;
  font-style: normal;
@@ -444,7 +444,7 @@ color: #901C1C;
 }
 
 .colLike{
-  width: 20%;
+  width: 15%;
   padding-left: 12px;
   padding-right: 16px;
   font-size: 13px;
