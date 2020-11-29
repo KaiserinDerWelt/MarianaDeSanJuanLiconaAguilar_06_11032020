@@ -213,7 +213,7 @@ const db = {
             "id": 725639493,
             "photographerId": 925,
             "alt" : "Event Fotography Product Pitch",
-            "image": "Event_ProductPitchjpg",
+            "image": "Event_ProductPitchjpg", //Example of error in json spelling
             "tags": ["events"],
             "likes": 3,
             "date": "2019-05-20",
