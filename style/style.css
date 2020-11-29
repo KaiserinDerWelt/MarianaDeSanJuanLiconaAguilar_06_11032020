@@ -127,7 +127,7 @@ display: block;
   border-radius: 100px;
   display: block;
   margin: 10px auto;
-  object-fit: cover;
+  object-fit: cover!important;
 }
 
 p {
@@ -324,7 +324,7 @@ cursor: pointer;
   border-radius: 100px;
   display: block;
   margin-right: 25px;
-  object-fit: cover;
+  object-fit: cover !important;
 
 }
 
@@ -641,6 +641,12 @@ img.hover-shadow {
 }
 
 #btnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#btnContainerII {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
