@@ -39,7 +39,7 @@ function renderPhotos(photosArray) {
     for(let i = 0; i < photosArray.length; i++) {
             photosContainer.innerHTML += `<div class="cardDisplay">
                                             <a href="#">
-                                                <img src="${photosFolder}/${photosArray[i].image}" alt=""  class="squarePicture" onclick="currentSlide(${i + 1})" id="test" data-lightbox="lightboxImage" aria-hidden="true">
+                                                <img src="${photosFolder}/${photosArray[i].image}" alt="${photosArray[i].alt}"  class="squarePicture" onclick="currentSlide(${i + 1})" id="test" data-lightbox="lightboxImage" aria-hidden="true">
                                             </a>
                                             <div class="carrouselDescription">
                                                 <div class="colName">${photosArray[i].alt}</div>
@@ -49,7 +49,7 @@ function renderPhotos(photosArray) {
                                         </div>`
 
             sildesContainer.innerHTML += `<div class="mySlides">
-                                            <img src="${photosFolder}/${photosArray[i].image}"  class="imgShow">
+                                            <img src="${photosFolder}/${photosArray[i].image}"  class="imgShow" alt="${photosArray[i].alt}">
                                             <div class="caption-container">
                                             <p class="caption">${photosArray[i].alt}</p>
                                             </div>
